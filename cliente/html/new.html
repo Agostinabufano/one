@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Ada TP3</title>
+</head>
+
+<body>
+    <a href="new.html"><button>New</button></a>
+    <a href="edit.html"><button>Edit</button></a>
+    <form action="http://localhost:3000/api/user" method="POST">
+        <div>
+            <p>Nombre:</p>
+            <input type="text" name="name" id="name">
+        </div>
+        <div>
+            <p>Apellido:</p>
+            <input type="text" name="surname" id="surname">
+        </div>
+        <div>
+            <p>Telefono:</p>
+            <input type="text" name="tel" id="tel">
+        </div>
+        <div>
+            <p>Email:</p>
+            <input type="text" name="mail" id="mail">
+        </div>
+
+        <div>
+            <button id="save">Guardar</button>
+        </div>
+    </form>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="../js/index.js"></script>
+</body>
+
+</html>
